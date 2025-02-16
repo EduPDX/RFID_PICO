@@ -1,4 +1,4 @@
-// Padded and checksummed version of: D:/Programas/EmbarcaTech/Projetos/RFID_PICO/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: D:/Programas/EmbarcaTech/RFID_PICO/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb
