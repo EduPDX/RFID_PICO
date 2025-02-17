@@ -16,7 +16,7 @@ MFRC522 (Identificação por Radiofrequência), um display OLED SSD1306 e comuni
 
 * Indicação visual com LEDs e exibição de mensagens no display OLED.
 
-## 📁Estrutura do Repositório
+## 🗂Estrutura do Repositório
 
 O repositório contém os seguintes diretórios e arquivos principais:
 
