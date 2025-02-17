@@ -1,11 +1,11 @@
 # Documentação do Projeto RFID_PICO
 
-## 📄Introdução
+## 📄 Introdução
 
 O projeto **RFID_PICO** é uma aplicação desenvolvida para a plataforma **Raspberry Pi Pico W**, utilizando tecnologia **RFID** 
 MFRC522 (Identificação por Radiofrequência), um display OLED SSD1306 e comunicação via MQTT para registro de acessos. O sistema se conecta a uma rede Wi-Fi e autentica cartões RFID previamente cadastrados, sinalizando a aceitação ou recusa com LEDs e notificando via MQTT. Este documento fornece uma visão geral do projeto, incluindo estrutura, dependências, instruções de uso e detalhes sobre hardware e comunicação.
 
-## 📝Funcionalidades
+## 📝 Funcionalidades
 * Leitura de cartões RFID utilizando o módulo MFRC522.
 
 * Autenticação de usuários com base em uma lista de tags aceitas.
@@ -41,7 +41,7 @@ O repositório contém os seguintes diretórios e arquivos principais:
 └── README.md                 # Documentação do projeto
 ```
 
-## 📦 Dependências
+## 📚 Dependências
 
 O projeto utiliza as seguintes bibliotecas e ferramentas:
 
@@ -53,7 +53,7 @@ O projeto utiliza as seguintes bibliotecas e ferramentas:
 - **display**: configuraçoes oara o display Oled.
 
 
-## 🪛Esquemático de Ligação
+## 🪛 Esquemático de Ligação
 
 Aqui está a ligação entre os componentes e a Raspberry Pi Pico:
 
@@ -100,7 +100,7 @@ Aqui está a ligação entre os componentes e a Raspberry Pi Pico:
   </tr>
 </table>
 
-## 🔩Componentes Utilizados
+## 🔩 Componentes Utilizados
 
 * Raspberry Pi Pico W
 
@@ -112,7 +112,7 @@ Aqui está a ligação entre os componentes e a Raspberry Pi Pico:
 
 * Conexão Wi-Fi via chip CYW43439
 
-## ⚙️Configuração
+## ⚙️ Configuração
 
 1. Defina as credenciais Wi-Fi no código:
 ``` C
@@ -127,20 +127,20 @@ uint8_t acceptedTags[][4] = {
     {0x93, 0xE3, 0x9A, 0x92},
 };
 ```
-## 🛜Comunicação MQTT
+## 🛜 Comunicação MQTT
 
 O projeto se comunica via MQTT enviando mensagens para o tópico pico. Exemplos de mensagens:
 * ```autenticado``` → Quando um cartão aceito é lido
 * ```Nao autenticado``` → Quando um cartão não autorizado é lido.
 
-## 🪪Licença
+## 🪪 Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-##### 👨🏻‍💻Autor
+##### 👨🏻‍💻 Autor
 Desenvolvido por:  Carlos Eduardo Sousa Medeiros
 Email: eduplayerg22@gmail.com
 
-#### 🔍Extra
+#### 🔍 Extra
 
 Site MQTT para teste: https://testclient-cloud.mqtt.cool/
